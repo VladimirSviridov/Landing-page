@@ -1,0 +1,1133 @@
+@import "vars"
+
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Baloo 2', cursive
+
+a
+  text-decoration: none
+
+
+input
+  outline: none
+
+.top
+  background: url(img/post-boy-320.jpg) no-repeat
+  background-size: 100%
+  min-height: 300px
+  position: relative
+
+.logo__link
+  height: 29px
+
+  &:hover
+    filter: drop-shadow(3px 5px 5px $light-blue)
+
+#switcher
+  visibility: hidden
+  position: absolute
+  left: -999999px
+
+  &:checked ~ .nav
+    right: -25px
+
+.center
+  padding: 0 20px
+
+.header
+  padding-top: 29px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.open
+  color: $white
+  font-size: 29px
+
+.close
+  color: $dark-grey
+  font-size: 40px
+
+.blue-button
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: uppercase
+  margin-bottom: 10px
+  height: 40px
+  width: 277px
+  color: $white
+  background-color: $blue
+  box-sizing: border-box
+  border-radius: 30px
+
+  &:hover
+    box-shadow: 0 4px 15px $blue
+
+  &:active
+    background-color: $blue-green
+
+.menu
+  list-style: none
+
+  &__list
+    margin-top: 20px
+    margin-bottom: 20px
+
+    &:hover
+      text-shadow: 0 4px 15px $blue-green
+
+  &__link
+    font-size: 18px
+    color: $black
+
+.send__320
+  display: none
+
+.aggregator
+  background-color: $light
+  display: flex
+
+  &__row
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__img-psevdo
+    display: none
+
+  &__img-post-psevdo
+    display: none
+
+  &__h2
+    color: $black
+
+    &-psevdo
+      display: none
+
+  &__p
+    color: $black
+
+.step
+  display: grid
+  justify-content: space-between
+
+.care
+  background: $light
+  display: flex
+
+.call
+  display: flex
+  background: $blue
+  color: $white
+
+  &__content-h2
+    text-transform: uppercase
+
+  &__phone
+    margin-top: 10px
+    margin-bottom: 10px
+    height: 40px
+    width: 277px
+    padding-left: 20px
+    padding-right: 20px
+    border: 1px solid white
+    box-sizing: border-box
+    border-radius: 30px
+    background: #008DCD
+    color: $white
+
+  &__button
+    background: $orange
+    color: $black
+
+    &:hover
+      box-shadow: 0 4px 20px $orange
+
+  &__agree
+    color: white
+    font-size: 10px
+    line-height: 12px
+
+.agree-box
+  display: flex
+  align-items: center
+
+.review
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding-top: 21px
+  padding-bottom: 30px
+
+  &__h2
+    text-transform: uppercase
+    align-self: start
+    margin-bottom: 6px
+
+  &__content
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__header
+    display: flex
+    margin-bottom: 11px
+
+    &-label
+      margin-left: 20px
+
+    &-name
+      font-size: 26px
+      line-height: 31px
+
+    &-h6
+      font-size: 18px
+      line-height: 22px
+      margin-top: 6px
+      margin-bottom: 9px
+
+    &-p
+      font-size: 10px
+      line-height: 12px
+
+  &__text
+    font-size: 12px
+    line-height: 14px
+
+  &__left,
+  &__right
+    color: $grey
+    font-size: 25px
+
+    &:hover
+      color: $blue
+
+.advantages
+  background: $light
+  padding-top: 23px
+  padding-bottom: 23px
+
+  &__h2
+    font-size: 28px
+    line-height: 34px
+    margin-bottom: 12px
+
+  &__container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__block
+    width: 86px
+
+  &__circle
+    height: 86px
+    background: $white
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 13px
+
+  &__p
+    font-size: 10px
+    line-height: 12px
+    text-align: center
+    margin-bottom: 15px
+
+.garant
+  padding-top: 27px
+  padding-bottom: 27px
+
+  &__h2
+    font-size: 28px
+    line-height: 34px
+    margin-top: 29px
+    margin-bottom: 16px
+
+  &__p
+    margin-top: 15px
+    margin-bottom: 15px
+    font-size: 12px
+    line-height: 14px
+
+  &__section
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__article
+    width: 230px
+    margin-left: 6px
+    margin-right: 6px
+
+  &__block
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &-h2
+      font-size: 16px
+      line-height: 19px
+      margin-left: 10px
+
+  &__circle
+    width: 62px
+    height: 62px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $light
+
+    & img
+      width: 26px
+      height: 28px
+
+.doubt
+  background: #D2ECF7
+  padding-top: 20px
+  padding-bottom: 20px
+
+  &__h2
+    font-size: 28px
+    line-height: 34px
+    margin-bottom: 20px
+
+  &__text
+    font-size: 14px
+    line-height: 17px
+
+    &-hide
+      background: $light
+      font-size: 14px
+      line-height: 17px
+      display: none
+
+  &__block
+    background: $white
+    padding: 24px 24px 0 24px
+    border-radius: 32px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 10px
+
+  &__angle-down
+    margin-left: 20px
+    color: $blue
+    padding: 10px
+    font-size: 20px
+
+    &:hover
+      color: $orange
+
+    &:hover ~ .doubt__text-hide
+      display: flex
+      padding: 24px
+      margin: 0 -24px 0 -24px
+      border-bottom-left-radius: 32px
+      border-bottom-right-radius: 32px
+
+.companies
+  padding-top: 20px
+  padding-bottom: 20px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  &__title
+    width: 70px
+
+  &__title img
+    transform: scale(0.6)
+
+  &__wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__left,
+  &__right
+    color: $grey
+
+    &:hover
+      color: $blue
+
+.footer
+  background: $bg-color
+  padding-top: 12px
+  padding-bottom: 12px
+
+  &__header
+    margin-top: -29px
+    margin-bottom: -10px
+
+  &__line
+    border: 0.5px solid $grey
+    margin-top: 12px
+    margin-bottom: 12px
+
+  &__open
+    color: $dark-grey
+
+  &__phone
+    background: $bg-color
+
+  &__h2
+    font-size: 18px
+    line-height: 22px
+
+  &__social
+    display: flex
+    justify-content: space-between
+
+  &__a
+    color: $blue
+
+    &:hover
+      color: $orange
+
+
+@media (max-width: 767.98px)
+
+  .nav
+    position: fixed
+    width: 100%
+    height: 100vh
+    top: 0
+    right: 100%
+    padding-left: 25px
+    margin-left: -25px
+    background-color: $white
+    transition: all 0.5s
+    display: flex
+    flex-direction: column
+    padding-top: 13px
+
+    &__logo
+      &:hover
+        filter: drop-shadow(3px 5px 5px $light-blue)
+  .nav__768
+    display: none
+  .close
+    position: absolute
+    right: 50px
+
+  .menu
+    list-style: none
+
+    &__list
+      margin-top: 20px
+      margin-bottom: 20px
+
+      &:hover
+        text-shadow: 0 4px 15px $blue-green
+
+    &__link
+      font-size: 18px
+      color: $black
+
+    &__phone
+      margin-top: 10px
+      margin-bottom: 10px
+      height: 40px
+      width: 277px
+      padding-left: 20px
+      padding-right: 20px
+      border: 1px solid $dark-grey
+      box-sizing: border-box
+      border-radius: 30px
+
+    &__agree
+      font-size: 10px
+      line-height: 12px
+      color: $grey
+      margin-left: 10px
+
+  .blue-button
+    display: flex
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    margin-bottom: 10px
+    height: 40px
+    width: 277px
+    color: $white
+    background-color: #008DCD
+    box-sizing: border-box
+    border-radius: 30px
+
+  .questions
+    font-size: 18px
+    color: $black
+    line-height: 22px
+
+  .header-society
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    & a
+      color: $blue
+      font-size: 38px
+      margin-right: 50px
+      margin-top: 24px
+
+  .header
+    margin-bottom: 10px
+
+  .send
+    display: none
+
+    &__320
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 20px
+
+      &-p
+        margin-top: 10px
+        margin-bottom: 17px
+  .aggregator
+    margin-top: 27px
+    padding-top: 17px
+    flex-direction: column
+    align-items: center
+
+    &__content
+      width: 300px
+      display: flex
+      flex-direction: column
+      align-items: center
+
+    &__img
+      display: none
+
+      &-psevdo
+        display: block
+
+      &-post
+        width: 278px
+        margin-bottom: 25px
+
+    &__h2
+      font-size: 18px
+      line-height: 22px
+
+    &__p
+      font-size: 12px
+      line-height: 14px
+      margin-top: 10px
+      margin-bottom: 12px
+
+  .step
+    justify-content: center
+    margin-top: 27px
+    margin-bottom: 27px
+    grid-gap: 27px
+
+    & img
+      width: 277px
+
+    &__number-p
+      width: 277px
+      font-size: 14px
+      line-height: 17px
+
+    &__number-h2
+      margin-top: 27px
+      margin-bottom: 17px
+      font-size: 26px
+      line-height: 31px
+
+  .care
+    flex-direction: column
+    align-items: center
+    padding-top: 23px
+    padding-bottom: 13px
+
+    &__h2
+      width: 278px
+      margin-bottom: 9px
+      font-size: 24px
+      line-height: 29px
+
+  .call
+    flex-direction: column
+    align-items: center
+    padding-top: 32px
+    padding-bottom: 7px
+
+    &__phone
+      border: 1px solid white
+
+    &__button
+      background: $orange
+      color: $black
+
+    &__agree
+      color: white
+      font-size: 10px
+      line-height: 12px
+
+    &__content
+      width: 280px
+
+      &-h2
+        font-size: 28px
+        line-height: 34px
+
+      &-p
+        margin-top: 11px
+        margin-bottom: 7px
+        font-size: 14px
+        line-height: 13px
+
+  .review
+    &__2
+      display: none
+
+    &__section
+      margin-left: 10px
+      margin-right: 10px
+
+  .garant
+    &__article
+      &-hide
+        display: none
+
+    &__button
+      width: 230px
+
+  .companies
+    &__wrapper
+      z-index: -1
+
+    &__title
+      &-hide
+        display: none
+
+  .footer
+    &__header
+      margin-top: -29px
+      margin-bottom: -10px
+
+    &__open,
+    &__768__link
+      color: $dark-grey
+
+    &__society
+      display: none
+
+    &__text
+      font-size: 9px
+      line-height: 12px
+
+
+@media (min-width: 767.98px)
+  .top
+    background: url(img/post-boy-768.jpg) no-repeat
+    background-size: 100vw
+    min-height: 413px
+  .center
+    padding: 0 calc(50vw - 350px)
+  .open,
+  .close
+    display: none
+  .nav
+    position: fixed
+    width: 100%
+    height: 100vh
+    top: 0
+    right: 100%
+    background-color: $white
+
+  .menu__768
+    display: flex
+    justify-content: space-between
+    list-style: none
+
+    &__list
+      margin-left: 24px
+
+      &:hover
+        text-shadow: 0 4px 15px $light-blue
+
+    &__link
+      font-size: 14px
+      color: $white
+  #switcher
+    &:checked ~ .nav
+      right: 100%
+  .send
+    color: $white
+
+    &__h1
+      font-size: 44px
+      margin-top: 55px
+      margin-bottom: 18px
+
+    &__p
+      font-size: 28px
+      margin-bottom: 36px
+
+  .aggregator
+    flex-direction: column
+
+    &__img-post
+      width: 398px
+      height: 203px
+
+    &__h2
+      padding-top: 25px
+      font-size: 36px
+      line-height: 43px
+
+    &__p
+      margin-bottom: 40px
+      font-size: 14px
+      line-height: 17px
+
+    &__row
+      display: flex
+      flex-direction: row-reverse
+      margin-top: 15px
+      margin-bottom: 38px
+      justify-content: space-between
+
+    &__content
+      width: 290px
+
+  .step
+    grid-template-columns: 281px 281px
+    margin-top: 38px
+    margin-bottom: 38px
+    grid-gap: 80px
+
+    & img
+      width: 281px
+
+    &__number-h2
+      margin-top: 28px
+      margin-bottom: 15px
+
+    &__number-p
+      width: 281px
+      font-size: 16px
+      line-height: 19px
+
+  .care
+    justify-content: space-between
+    align-items: center
+    padding-top: 30px
+    padding-bottom: 30px
+
+    &__h2
+      width: 379px
+      font-size: 28px
+      line-height: 34px
+
+  .call
+    padding-top: 32px
+    padding-bottom: 14px
+    justify-content: space-between
+
+    &__content
+      width: 280px
+
+    &__agree
+      margin-left: 7px
+
+  .review
+    padding-top: 21px
+    padding-bottom: 30px
+
+    &__h2
+      margin-bottom: 26px
+
+    &__contet
+      display: flex
+
+    &__section
+      margin-left: 41px
+      margin-right: 41px
+      display: flex
+
+    &__1,
+    &__2
+      width: 280px
+
+    &__2
+      margin-left: 20px
+
+  .advantages
+    padding-top: 37px
+    padding-bottom: 37px
+
+    &__h2
+      font-size: 36px
+      line-height: 43px
+      margin-bottom: 24px
+
+    &__block
+      width: 100px
+
+    &__circle
+      margin-top: 24px
+      margin-bottom: 24px
+
+    &__p
+      font-size: 18px
+      line-height: 22px
+
+    &__circle
+      height: 100px
+
+      & img
+        transform: scale(1.1)
+
+  .garant
+    &__section
+      align-items: start
+
+    &__p
+      height: 100px
+
+    &__left,
+    &__right
+      display: none
+
+    &__block
+      display: flex
+      align-items: start
+      flex-direction: column
+
+      &-h2
+        font-size: 23px
+        line-height: 24px
+        margin-top: 18px
+        margin-bottom: 8px
+        margin-left: 0
+
+    &__circle
+      width: 100px
+      height: 100px
+
+      & img
+        height: auto
+        width: auto
+
+    &__button
+      width: 220px
+
+  .doubt
+    padding-top: 40px
+    padding-bottom: 40px
+
+    &__h2
+      font-size: 36px
+      line-height: 43px
+
+    &__text
+      font-size: 16px
+      line-height: 19px
+
+  .companies
+    padding-top: 32px
+    padding-bottom: 32px
+
+    &__title
+      width: 80px
+
+    &__title img
+      transform: scale(0.8)
+
+    &__left,
+    &__right
+      font-size: 20px
+
+  .footer
+    padding-top: 33px
+    padding-bottom: 14px
+
+    &__phone
+      margin-bottom: 10px
+      height: 40px
+      width: 277px
+      padding-left: 20px
+      padding-right: 20px
+      border: 1px solid $dark-grey
+      box-sizing: border-box
+      border-radius: 30px
+      background: $bg-color
+      color: $dark-grey
+
+    &__agree
+      font-size: 11px
+      line-height: 12px
+
+    &__help
+      display: flex
+
+    &__form
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      justify-content: space-between
+
+    &__open,
+    &__768__link
+      color: $dark-grey
+
+
+@media (min-width: 1199.98px)
+  .top
+    background: url(img/post-boy-1200.jpg) no-repeat
+    background-size: 100vw
+    min-height: 523px
+  .center
+    padding: 0 calc(50vw - 579px)
+  .menu__768
+    &__list
+      margin-left: 60px
+
+    &__link
+      font-size: 18px
+
+  .logo__link
+    height: 46px
+
+  .send
+    &__h1
+      margin-top: 88px
+      margin-bottom: 22px
+
+    &__p
+      margin-bottom: 36px
+
+  .aggregator
+    padding-top: 90px
+
+    &__row
+      flex-direction: row
+
+    &__content
+      width: 460px
+
+    &__h2
+      display: none
+
+      &-psevdo
+        display: block
+        font-size: 36px
+        line-height: 43px
+
+    &__p
+      font-size: 18px
+      line-height: 27px
+      margin-top: 25px
+
+    &__img-post
+      width: 660px
+      height: 336px
+
+  .step
+    grid-template-columns: 462px 462px
+    margin-top: 75px
+    margin-bottom: 75px
+    grid-gap: 120px
+
+    & img
+      width: 462px
+
+    &__number-h2
+      margin-top: 47px
+      margin-bottom: 9px
+      font-size: 30px
+      line-height: 36px
+
+    &__number-p
+      width: 462px
+      font-size: 20px
+      line-height: 24px
+
+  .care
+    justify-content: space-between
+    align-items: center
+    padding-top: 30px
+    padding-bottom: 30px
+
+    &__h2
+      width: auto
+      font-size: 28px
+      line-height: 34px
+
+  .call
+    padding-top: 73px
+    padding-bottom: 41px
+
+    &__content
+      width: auto
+
+      &-h2
+        font-size: 48px
+        line-height: 58px
+
+      &-p
+        font-size: 24px
+        line-height: 23px
+
+  .review
+    padding-top: 69px
+    padding-bottom: 57px
+
+    &__h2
+      margin-bottom: 45px
+      font-size: 36px
+      line-height: 43px
+
+    &__contet
+      display: flex
+
+    &__section
+      margin-left: 69px
+      margin-right: 69px
+      display: flex
+
+    &__1,
+    &__2
+      width: 460px
+
+    &__2
+      margin-left: 40px
+
+    &__img
+      width: 125px
+
+    &__text
+      margin-top: 27px
+      font-size: 16px
+      line-height: 19px
+
+    &__header
+      &-name
+        font-size: 36px
+        line-height: 43px
+
+      &-h6
+        font-size: 20px
+        line-height: 24px
+
+      &-p
+        font-size: 16px
+        line-height: 19px
+
+  .advantages
+    padding-top: 80px
+    padding-bottom: 80px
+
+    &__h2
+      font-size: 36px
+      line-height: 43px
+      margin-bottom: 24px
+
+    &__block
+      width: 160px
+
+    &__circle
+      height: 160px
+
+      & img
+        transform: scale(1.5)
+
+  .garant
+    padding-top: 80px
+    padding-bottom: 80px
+
+    &__h2
+      font-size: 36px
+      line-height: 43px
+      margin-bottom: 26px
+
+    &__circle
+      width: 160px
+      height: 160px
+
+      & img
+        transform: scale(1.4)
+
+    &__block
+      &-h2
+        font-size: 30px
+        line-height: 36px
+        margin-top: 32px
+        margin-bottom: 0
+
+    &__article
+      width: 360px
+
+    &__p
+      font-size: 16px
+      line-height: 19px
+
+    &__button
+      width: 360px
+      height: 48px
+
+  .doubt
+    padding-top: 60px
+    padding-bottom: 60px
+
+    &__wrapper
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+
+    &__block
+      width: 500px
+      margin-bottom: 24px
+
+    &__h2
+      font-size: 36px
+      line-height: 43px
+
+    &__text
+      font-size: 16px
+      line-height: 19px
+
+  .companies
+    padding-top: 50px
+    padding-bottom: 50px
+
+    &__title
+      width: 120px
+
+    &__title img
+      transform: scale(1.2)
+
+    &__left,
+    &__right
+      font-size: 30px
+
+  .footer
+    padding-top: 38px
+    padding-bottom: 22px
+
+    &__line
+      margin-top: 19px
+      margin-bottom: 19px
+
+    &__text
+      font-size: 16px
+      line-height: 19px
+
+    &__h2
+      font-size: 30px
+      line-height: 36px 
